@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* first sec */
+.header{
+    color: rgb(112, 110, 110);
+    padding: 5px;
+}
+/* end of fiest sec */
+
+/* second sec */
+.main{
+    background-color: rgb(106, 159, 228);
+    color: white;
+}
+
+form{
+    background-color: rgba(166, 189, 219, 0.4);
+    padding: 20px;
+   
+}
+
+input, button{
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+label, button{
+    margin-top: 10px;
+}
+#small{
+    font-size: small;
+    
+}
+#small, form h5{
+    text-align: center;
+}
+
+button{
+    background-color: orange;
+    color: white;
+    font-size: large;
+    margin-bottom:7px;
+}
+/* end of second sec */
+
+/* third sec */
+.info{ 
+    min-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.info i{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* end of third sec */
+
+/* forth sec */
+.about-me{
+    background-color: rgb(222, 231, 243);
+    padding: 25px;
+}
+.avatar{
+    border-radius: 50%;
+    width: 130px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border: solid 2px;
+}
+/* end of forth sec */
+@media screen and (min-width: 752px){
+    .info{
+        text-align: center;
+    }
+    .hidden{
+        display: none;
+    }
+}
+@media screen and (max-width: 751px){
+    .header, .text{
+        text-align: center;
+    }
+
+    .hidden{
+        display: block;
+    }
+}
+
